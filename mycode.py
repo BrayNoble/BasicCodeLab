@@ -28,8 +28,9 @@ def coffee_bot():
     print("Okay, so I have:")
     for drink in drinks:
       print(f"- {drink}")
+    print('Thanks, {}! Your order will be ready shortly.'.format(name))
   else:
-    print('Thanks, {}! Your order will be ready shortly.'.format(drinks[0]))
+    print('Thanks, {}! Your order will be ready shortly.'.format(name))
 
 def get_drink_type():
   res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n> ')
